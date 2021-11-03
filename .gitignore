@@ -5,3 +5,6 @@ node_modules
 dist
 .cache
 .vscode
+src/img/*
+src/css
+build/img/*.png
