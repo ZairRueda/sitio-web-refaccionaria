@@ -1,0 +1,37 @@
+
+/*========== SEND GIFT ==========*/
+.send{
+    
+    background-color: var(--first-color-send);
+
+    &__title, &__description{
+        color: #fff;
+    }
+    &__description{
+        text-align: center;
+        margin-bottom: var(--mb-4);
+    }
+    &__direction{
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: .5rem;
+    }
+    &__input{
+        width: 70%;
+        outline: none;
+        border: none;
+        font-size: var(--normal-font-size);
+        font-family: var(--body-font);
+
+        &::placeholder{
+            font-family: var(--body-font);
+        }
+
+    }
+    &__img{
+        width: 280px;
+        justify-self: center;
+    }
+}

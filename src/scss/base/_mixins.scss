@@ -1,0 +1,46 @@
+
+@mixin telefono {
+    @media (min-width: $telefono) {
+        //@content : sirve para agregar bloques de codigo posteriormente en el lugar en vayamos agregar el mixin y se inyecte en la varieble telefono 
+        @content;
+    }
+}
+
+@mixin telefonoMax {
+    @media (max-width: $telefono) {
+        //@content : sirve para agregar bloques de codigo posteriormente en el lugar en vayamos agregar el mixin y se inyecte en la varieble telefono 
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin tabletMax {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin desktopMax {
+    @media (max-width: $desktop) {
+        @content;
+    }
+}
+
+//Podemos hacer un mixin personalisable asiganando variables personalizables
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    //Gap aplica la separacion entre columnas y filas
+    gap: $espaciado;
+}

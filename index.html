@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Refaccionaria</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <!--========== BOX ICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="build/css/app.css" />
+    <link rel="stylesheet" href="build/css/all.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+    
+    <!--========== HEADER ==========-->
+    <div class="telefono">
+        <p class="telefono__text">
+            Presupuesto sin compromizo
+        </p>
+
+        <a class="telefono__numero" href="tel:+527444633918">
+            <i class='bx bxs-phone-call bx-tada' ></i>
+            7444633918
+        </a>
+            
+        <div class="telefono__eliminar">
+            <p class="telefono__icono">x</p>
+        </div>
+    </div>
+
+    <div class="mensajeWhat">
+        <a href="https://api.whatsapp.com/send?phone=+527443337886">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+    </div>
+
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">AutoPartes Jorge</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li>
+                    <li class="nav__item"><a href="#buscar" class="nav__link">Buscar</a></li>
+                    <li class="nav__item"><a href="#decoration" class="nav__link">Accesorios</a></li>
+                    <li class="nav__item"><a href="#accessory" class="nav__link">Paquetes</a></li>
+
+                    <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__img">
+                    <a class="reference" href="https://es.vecteezy.com/vectores-gratis/motor">Motor Vectores por Vecteezy</a>
+                    <img src="build/img/engine.svg" alt="">
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">Refacciones de Acapulco</h1>
+                    <p class="home__description">Proporcionando las mejores marcas y dando el mejor servicio desde hace 20 años</p>
+                    <a href="tel:+527444633918" class="button">
+                        <i class='bx bxs-phone-call bx-tada' ></i>
+                        Llamar</a>
+                </div>   
+            </div>
+        </section>
+
+        <!--========== SHARE or send or Buscar==========-->
+        <section class="send section" id="buscar">
+            <div class="send__container bd-container bd-grid">
+                <div class="send__content">
+                    <h2 class="section-title-center send__title">Buscar Refacciones</h2>
+                    <!-- <p class="send__description"></p> -->
+                    <!-- <form action="">
+                        <div class="send__direction">
+                            <input type="text" placeholder="House address" class="send__input">
+                            <a href="#" class="button">Send</a>
+                        </div>
+                    </form> -->
+                    <div class="send__direction">
+                        <input type="text" class="send__input" placeholder="Buscar autoparte">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+
+                <div class="send__img">
+                    <img src="build/img/imgPrueba/tum1.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!--========== DECORATION ==========-->
+        <section class="decoration section bd-container" id="decoration">
+            <h2 class="section-title">Accesorios para <br> personalizar tu coche</h2>
+            <div class="decoration__container bd-grid">
+                <div class="decoration__data">
+                    <img src="build/img/imgPrueba/tum2.webp" alt="" class="decoration__img">
+                    <h3 class="decoration__title">Christmas Bells</h3>
+                    <a href="#" class="button button-link">Go Shopping</a>
+                </div>
+
+                <div class="decoration__data">
+                    <img src="build/img/imgPrueba/tum2.webp" alt="" class="decoration__img">
+                    <h3 class="decoration__title">Christmas Candies</h3>
+                    <a href="#" class="button button-link">Go Shopping</a>
+                </div>
+
+                <div class="decoration__data">
+                    <img src="build/img/imgPrueba/tum2.webp" alt="" class="decoration__img">
+                    <h3 class="decoration__title">Christmas Trees</h3>
+                    <a href="#" class="button button-link">Go Shopping</a>
+                </div>
+            </div>
+        </section>
+
+        <!--========== ACCESSORIES ==========-->
+        <section class="accessory section bd-container" id="accessory">
+            <h2 class="section-title">Paquetes <br> Mas Vendidos</h2>
+
+            <div class="accessory__container bd-grid">
+                <div class="accessory__content">
+                    <img src="build/img/imgPrueba/tum2.webp" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Snow Globe</h3>
+                    <span class="accessory__category">Accessory</span>
+                    <span class="accessory__preci">$9.45</span>
+                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="build/img/imgPrueba/tum2.webp" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Candy</h3>
+                    <span class="accessory__category">Accessory</span>
+                    <span class="accessory__preci">$2.52</span>
+                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="build/img/imgPrueba/tum2.webp" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Angel</h3>
+                    <span class="accessory__category">Accessory</span>
+                    <span class="accessory__preci">$13.15</span>
+                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="build/img/imgPrueba/tum2.webp" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Sphere</h3>
+                    <span class="accessory__category">Accessory</span>
+                    <span class="accessory__preci">$4.25</span>
+                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                </div>
+
+                <div class="accessory__content">
+                    <img src="build/img/imgPrueba/tum2.webp" alt="" class="accessory__img">
+                    <h3 class="accessory__title">Surprise gift</h3>
+                    <span class="accessory__category">Accessory</span>
+                    <span class="accessory__preci">$7.99</span>
+                    <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--========== BRANDS or share or Marcas ==========-->
+        <section class="share section bd-container" id="share">
+            <div class="share__container bd-grid">
+                <div class="share__data">
+                    <h2 class="section-title-center">Sharing Is The Best Gift <br> You Can Give</h2>
+                    <p class="share__description">Sharing these holidays is the best gift you can give, give a present or share your love with the people you love the most and celebrate with great happiness.</p>
+                    <a href="#" class="button">Send a Gift</a>
+                </div>
+
+                <div class="share__img">
+                    <a>
+                        <img src="build/img/imgPrueba/tum2.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section">
+        <div class="footer__container bd-container bd-grid">
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    <a href="#" class="footer__logo">Meta</a>
+                </h3>
+                <p class="footer__description">Ahorrate tiempo en buscar tus refacciones</p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Nuestros Servicios</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Envios</a></li>
+                    <li><a href="#" class="footer__link">Refacciones</a></li>
+                    <li><a href="#" class="footer__link">Paquetes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Nosotros</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Blog</a></li>
+                    <li><a href="#" class="footer__link">Sobre Nosotros</a></li>
+                    <li><a href="#" class="footer__link">Mision y Vicion</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2021 Refaccionaria Jorge. Todos los derechos resevados</p>
+    </footer>
+
+    
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="src/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="src/js/plugins.js"></script>
+    <script src="src/js/app.js"></script>
+    <script src="src/js/all.js"></script>
+
+    <!-- Add your site or application content here -->
+    
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>

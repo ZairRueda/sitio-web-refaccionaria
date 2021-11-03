@@ -1,0 +1,353 @@
+/*========== TELEFONO  ==========*/
+.telefonoOculto {
+    display: none;
+}
+
+.telefono {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 60% 30% 10%;
+    align-items: center;
+    max-width: 100%;
+    height: 10%;
+    right: 20%;
+    left: 20%;
+    z-index: 900;
+    background-color: #37b127;
+    border-radius: 0 0 50px 50px;
+
+    &__text {
+        text-align: center;
+        font-size: var(--normal-font-size);
+    }
+
+    &__icono {
+        font-weight: bold;
+        cursor: pointer;
+        background-color: var(--first-color-send);
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.39);
+        -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.39);
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.39);
+    }
+
+    &__numero, &__icono, &__text {
+        color: white;
+        font-weight: 500;
+    }
+
+    @include tabletMax {
+        right: 0;
+        left: 0;
+        border-radius: 5rem;
+    }
+
+    @include telefonoMax {
+        grid-template-columns: repeat(3 , 45% 35% 10%);
+        font-size: 1rem;
+    }
+
+
+}
+
+/*========== CLASS CSS ==========*/
+.section{
+    padding: 4rem 0 2rem;
+    
+    &-title, &-title-center{
+        font-size: var(--h2-font-size);
+        color: var(--title-color);
+        text-align: center;
+        margin-bottom: var(--mb-3);
+    }
+}
+
+/*========== LAYOUT ==========*/
+.l-main{
+    overflow: hidden;
+}
+.bd-container{
+    max-width: 968px;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
+
+.bd-grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+/*========== NAV ==========*/
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__menu{
+        @media screen and (max-width: 769px){
+            position: fixed;
+            top: -100%;
+            left: 0;
+            right: 0;
+            width: 90%;
+            margin: 0 auto;
+            padding: 2.5rem 0 0;
+            text-align: center;
+            background-color: var(--body-color);
+            transition: .4s;
+            box-shadow: 0 0 4px rgba(0,0,0,.1);
+            border-radius: 2rem;
+            z-index: var(--z-fixed);
+        }
+    }
+    &__item{
+        margin-bottom: var(--mb-3);
+    }
+    &__link, &__logo, &__toggle{
+        color: var(--title-color);
+        font-weight: var(--font-semi-bold);
+    }
+    &__logo{
+        &:hover{
+            color: var(--first-color);
+        }
+    }
+    &__link{
+        transition: .3s;
+        
+        &:hover{
+            color: var(--first-color);
+        }
+    }
+    &__toggle{
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+}
+
+
+/* Show menu */
+.show-menu{
+    top: calc(var(--header-height) + 1rem);
+}
+
+/* Active menu link */
+.active-link{
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -.75rem;
+        left: 45%;
+        width: 5px;
+        height: 5px;
+        background-color: var(--title-color);
+        border-radius: 50%;
+    }
+}
+
+/* Change background header */
+.scroll-header{
+    box-shadow: 0 1px 4px rgba(0,0,0,.1);
+}
+
+/* Scroll top */
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: #B1D4E0;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+
+    &:hover{
+        background-color: var(--first-color);
+    }
+
+    &__icon{
+        font-size: 1.5rem;
+        color: var(--body-color);
+    }
+}
+
+.show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+}
+
+/*// .header {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 15px 100px;
+//     z-index: 10;
+//     background: $azulFuerte;
+// }
+
+// .header .logo {
+//     position: relative;
+//     font-size: 1.5em;
+//     color: #fff;
+//     text-decoration: none;
+//     font-weight: 600;
+// }
+
+// .header .navigation {
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     margin: 10px 0;
+// }
+
+// .header .navigation li {
+//     list-style: none;
+//     margin: 0 10px;
+// }
+
+// .header .navigation li a {
+//     color: #fff;
+//     text-decoration: none;
+//     font-weight: 500;
+//     letter-spacing: 1px;
+// }
+
+// .header .navigation li a:hover {
+//     color: #ffeb3b;
+// }
+
+// .header .search {
+//     position: relative;
+//     width: 300px;
+//     height: 40px;
+
+// }
+
+// .header .search input {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     color: #fff;
+//     background: transparent;
+//     outline: none;
+//     border: 1px solid #fff;
+//     border-radius: 4px;
+//     padding: 0 10px 0 45px;
+// }
+
+// .header .search input::placeholder {
+//     color: #fff;
+// }
+
+// .header .search .fa-search {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     left: 10px;
+//     color: #fff;
+//     border-right: 1px solid #fff;
+//     padding-right: 7px;
+//     width: 20px;
+// }
+
+// .banner {
+//     padding: 200px 100px 100px;
+//     min-height: 100vh;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .banner .content {
+//     max-width: 800px;
+// }
+
+// .banner .content h2 {
+//     font-size: 3rem;
+//     color: #fff;
+// }
+
+// .banner .content p {
+//     font-size: 1.5em;
+//     color: #fff;
+// }
+
+// .banner .content a {
+//     display: inline-block;
+//     background: #fff;
+//     color: #434978;
+//     padding: 8px 20px;
+//     text-decoration: none;
+//     font-weight: 600;
+//     margin-top: 20px;
+// }
+
+// .banner .image {
+//     /* filter: invert(1); 
+//     max-width: 400px;
+//     margin-left: 50px;
+// }
+
+// // .busqueda {
+// //     background-color: #000;
+// //     width: 100%;
+// //     height: 20px;
+// // }
+
+// @include desktopMax {
+//     .header {
+//         padding: 10px 20px;
+//         flex-direction: column;
+//     }
+//     .banner {
+//         padding: 150px 20px 50px;
+//         flex-direction: column-reverse;
+//     }
+//     .banner .image {
+//         margin-left: 0;
+//         max-width: 80%;
+//     }
+//     .banner .content h2 {
+//         font-size: 2em;
+//     }
+// }
+
+// @include telefonoMax {
+//     .header .search {
+//         width: 100%;
+//     }
+
+//     .banner .image {
+//         margin-left: 0;
+//         max-width: 80%;
+//     }
+//     .banner .image {
+//         margin-top: 30px;
+//     }
+// }*/

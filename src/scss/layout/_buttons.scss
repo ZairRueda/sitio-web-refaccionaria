@@ -1,0 +1,26 @@
+
+/*========== BUTTONS ==========*/
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem; 
+    font-weight: var(--font-semi-bold);
+    transition: .3s;
+    
+    &:hover{
+        background-color: var(--first-color-alt);
+    }
+
+    &-link{
+        background: none;
+        padding: 0;
+        color: var(--first-color);
+
+        &:hover{
+            background-color: transparent;
+            color: var(--first-color-alt);
+        }
+    }
+}

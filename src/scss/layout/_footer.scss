@@ -1,0 +1,58 @@
+/*========== FOOTER ==========*/
+.footer {
+    &__container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    &__logo {
+        color: var(--title-color);
+    }
+    &__title {
+        margin-bottom: var(--mb-2);
+    }
+    &__logo,
+    &__title {
+        font-size: var(--h3-font-size);
+    }
+    &__link {
+        display: inline-block;
+        margin-bottom: 0.75rem;
+        color: var(--text-color);
+
+        &:hover {
+            color: var(--first-color);
+        }
+    }
+    &__social {
+        font-size: 1.5rem;
+        color: var(--title-color);
+        margin-right: var(--mb-3);
+
+        &:hover {
+            color: var(--first-color);
+        }
+    }
+    &__copy {
+        text-align: center;
+        font-size: var(--small-font-size);
+        color: var(--text-color-light);
+        margin-top: 4rem;
+    }
+}
+
+.mensajeWhat {
+    position: fixed;
+    z-index: 900;
+    background-color: #37b127;
+    border-radius: 50%;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    bottom: 15px;
+    left: 15px;
+
+    .bxl-whatsapp {
+        color: white;
+        font-size: 2rem;
+        margin: 7px;
+    }
+}

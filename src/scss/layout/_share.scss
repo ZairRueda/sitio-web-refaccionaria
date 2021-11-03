@@ -1,0 +1,13 @@
+/*========== SHARE ==========*/
+.share{
+    &__data{
+        text-align: center;
+    }
+    &__description{
+        margin-bottom: var(--mb-2);
+    }
+    &__img{
+        width: 280px;
+        justify-self: center;
+    }
+}

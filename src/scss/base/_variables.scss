@@ -1,0 +1,97 @@
+/*===== VARIABLES CSS =====*/
+:root{
+    --header-height: 3rem;
+
+    /*========== Colors ==========*/
+    --first-color: #145DA0;
+    --first-color-alt: #0C2D48;
+    --first-color-send: #2E8BC0;
+    --title-color: #161212;
+    --text-color: #5B5757;
+    --text-color-light: #8F8A8A;
+    --body-color: #FEFBFB;
+    --container-color: #FFF;
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+
+    --biggest-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+
+    @media screen and (min-width: 968px){
+        --biggest-font-size: 3rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+
+    /*========== Font weight ==========*/
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*========== Margenes ==========*/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+//=========Media Queries============
+$telefono: 480px;
+$tablet: 769px;
+$desktop: 1200px;
+
+/*// //Colores
+// $azulClaro : #B1D4E0;
+// $azulMedio : #2E8BC0;
+// $azulAlto : #145DA0;
+// $azulFuerte : #0C2D48;
+
+// //Media Queries
+// $telefono: 480px;
+// $tablet: 768px;
+// $desktop: 1200px;
+// //Fuentes
+// $delgada: 300;
+// $regular: 400;
+// $bold: 700;
+// $black: 900;
+// //Separaciones
+// $separacion: 5rem;
+
+
+/*Varibles varias de otro proyeto
+
+// //Asi se nombra una variable en SASS
+// $fuentePrincipal: 'Montserrat',
+// sans-serif;
+// //Colores
+// $verde: #4CB8B3;
+// $rosa: #F53756;
+// $amarillo: #FEF46D;
+// $morado: #752F97;
+// $negro: #000;
+// $blanco: #fff;
+// //Media Queries
+// $telefono: 480px;
+// $tablet: 768px;
+// $desktop: 1200px;
+// //Fuentes
+// $delgada: 300;
+// $regular: 400;
+// $bold: 700;
+// $black: 900;
+// //Separaciones
+// $separacion: 5rem;
+
+*/
